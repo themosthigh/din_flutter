@@ -59,8 +59,15 @@ class _ScrollToHideState extends State<ScrollToHide> {
             height: (isVisible && !globalStoreController.drawerIsOpen.value)
                 ? 72
                 : 0,
-            child: Wrap(
-              children: [widget.child],
+            child: Transform.translate(
+              offset: Offset(
+                  0,
+                  (isVisible && !globalStoreController.drawerIsOpen.value)
+                      ? 0
+                      : 72),
+              child: Wrap(
+                children: [widget.child],
+              ),
             ),
           ),
         ),
