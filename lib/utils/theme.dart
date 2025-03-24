@@ -47,7 +47,7 @@ class Styles {
         backgroundColor: backgroundColor,
         elevation: 2,
       ),
-      cardTheme: CardTheme(
+      cardTheme: CardThemeData(
         color: isDarkMode
             ? colorScheme.primaryContainer.withAlpha(20)
             : colorScheme.onPrimaryContainer.withAlpha(20),
