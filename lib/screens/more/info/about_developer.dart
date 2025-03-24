@@ -14,7 +14,7 @@ class AboutDeveloper extends StatelessWidget {
       appBar: AppBar(
         title: const Text("This is me"),
         leading: const CustomBackButton(),
-        //backgroundColor: Theme.of(context).backgroundColor,
+        // backgroundColor: Theme.of(context).backgroundColor,
       ),
       body: Padding(
         padding: const EdgeInsets.all(8.0),
@@ -30,9 +30,9 @@ class AboutDeveloper extends StatelessWidget {
             ListTile(
               leading: const Icon(FontAwesomeIcons.github),
               title: const Text("Github"),
-              subtitle: const Text("github.com/tallestlegacy"),
+              subtitle: const Text("github.com/themosthigh"),
               onTap: () {
-                openLink("https://github.com/tallestlegacy");
+                openLink("https://github.com/themosthigh");
               },
               trailing: linkIcon,
             ),

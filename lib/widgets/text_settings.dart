@@ -44,7 +44,6 @@ class TextSettings extends StatelessWidget {
           ),
           CheckboxListTile(
             title: const Text("Aya Spans"),
-            subtitle: const Text("Experimental"),
             value: readerStoreController.ayaSpans.value,
             onChanged: ((value) {
               readerStoreController.setAyaSpans(value!);

@@ -4,7 +4,8 @@ This is a simple material UI Quran and Sunnah reader.
 
 🤟 Works on Android, iOS, Linux, Windows and Mac. Thank you Flutter 💖!
 
-[https://play.google.com/store/apps/details?id=com.tallestlegacy.din_dt]
+<!-- FIXME: Get android users and release into production -->
+<!-- [https://play.google.com/store/apps/details?id=com.tallestlegacy.din_dt] -->
 
 ## Running the project
 
@@ -49,8 +50,8 @@ flutter run
 
 ## UI
 
-| light                    | dark                          |
-| ------------------------ | ----------------------------- |
+| light                                                                                                       | dark                                                                                                        |
+| ----------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
 | ![image](https://github.com/tallestlegacy/din_flutter/assets/71118951/32186746-7022-470d-adcc-032b9c28a475) | ![image](https://github.com/tallestlegacy/din_flutter/assets/71118951/d2f95ee9-65ce-4578-adc3-5817a18693b2) |
 
 ## Building

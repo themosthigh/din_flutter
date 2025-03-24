@@ -123,7 +123,7 @@ class _InfoState extends State<Info> {
                         leading: const Icon(FontAwesomeIcons.githubAlt),
                         title: const Text("Source Code"),
                         onTap: () =>
-                            openLink("https://github.com/tallestlegacy/din_dt"),
+                            openLink("https://github.com/themosthigh/din_flutter"),
                         trailing: linkIcon,
                       ),
                       const Divider(),

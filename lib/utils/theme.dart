@@ -23,6 +23,9 @@ class Styles {
 
     Color? backgroundColor =
         isDarkMode ? colorScheme.onSurface : colorScheme.secondaryContainer;
+    Color? onBackgroundShade = isDarkMode
+        ? colorScheme.surface.withAlpha(20)
+        : colorScheme.secondary.withAlpha(60);
 
     SystemChrome.setSystemUIOverlayStyle(
       SystemUiOverlayStyle(
@@ -45,7 +48,7 @@ class Styles {
       navigationBarTheme: NavigationBarThemeData(
         labelBehavior: NavigationDestinationLabelBehavior.onlyShowSelected,
         backgroundColor: backgroundColor,
-        elevation: 2,
+        indicatorColor: onBackgroundShade,
       ),
       cardTheme: CardThemeData(
         color: isDarkMode
