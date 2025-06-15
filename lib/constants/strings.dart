@@ -2,9 +2,9 @@ const din = "دين";
 const bismi = "بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ";
 
 const arabicFonts = [
+  "Amiri",
   "Noto Naskh Arabic",
   "Aref Ruqaa",
-  "Amiri",
   "Almarai",
   "Cairo",
   "Changa",
@@ -29,8 +29,8 @@ const arabicFonts = [
 ];
 
 const ayaEndFonts = [
-  "Noto Naskh Arabic",
   "Amiri",
+  "Noto Naskh Arabic",
   "Lateef",
   "Noto Nastaliq Urdu",
 ];
