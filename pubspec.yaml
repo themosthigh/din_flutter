@@ -24,7 +24,7 @@ dependencies:
   path_provider: ^2.0.11
   google_fonts: ^6.2.1
   geolocator: ^13.0.1
-  flutter_local_notifications: ^18.0.0
+  # flutter_local_notifications: ^18.0.0
   flutter_svg: ^2.0.13
   sensors_plus: ^6.1.0
   adhan_dart: ^1.0.8
