@@ -19,10 +19,12 @@ class Styles {
 
     ColorScheme colorScheme = ColorScheme.fromSeed(
       seedColor: swatch,
+      // TODO: use seedColorBrightness
     );
 
     Color? backgroundColor =
-        isDarkMode ? colorScheme.onSurface : colorScheme.secondaryContainer;
+        isDarkMode ? colorScheme.onSurface : colorScheme.surface;
+
     Color? onBackgroundShade = isDarkMode
         ? colorScheme.surface.withAlpha(20)
         : colorScheme.secondary.withAlpha(60);
@@ -53,7 +55,7 @@ class Styles {
       cardTheme: CardThemeData(
         color: isDarkMode
             ? colorScheme.primaryContainer.withAlpha(20)
-            : colorScheme.onPrimaryContainer.withAlpha(20),
+            : colorScheme.surfaceContainer,
         elevation: .5,
         shadowColor: Colors.transparent,
         shape: RoundedRectangleBorder(

@@ -160,7 +160,7 @@ class _InfoState extends State<Info> {
                         trailing: shareIcon,
                         onTap: () async {
                           await Share.share(
-                            'Din - Quran and Sunnah (PlayStore) \n https://play.google.com/store/apps/details?id=com.tallestlegacy.din_dt',
+                            'Din - Quran and Sunnah (PlayStore) \n https://play.google.com/store/apps/details?id=com.tallestlegacy.din',
                           );
                         },
                       ),

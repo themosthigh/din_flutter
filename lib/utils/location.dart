@@ -50,8 +50,18 @@ double getOffsetFromNorth(double currentLatitude, double currentLongitude) {
   double deLa = radians(qLat);
   double deLo = radians(qLon);
 
-  var toDegrees = degrees(atan(sin(deLo - loRad) /
-      ((cos(laRad) * tan(deLa)) - (sin(laRad) * cos(deLo - loRad)))));
+  var toDegrees = degrees(
+    atan(
+          sin(deLo - loRad) /
+          (
+             (
+              cos(laRad) * tan(deLa)) - 
+              (sin(laRad) * cos(deLo - loRad))
+            )
+          )
+  );
+
+
   if (laRad > deLa) {
     if ((loRad > deLo || loRad < radians(-180.0) + deLo) &&
         toDegrees > 0.0 &&
