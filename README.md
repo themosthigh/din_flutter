@@ -1,11 +1,13 @@
-# Din
-
-This is a simple material UI Quran and Sunnah reader.
-
-🤟 Works on Android, iOS, Linux, Windows and Mac. Thank you Flutter 💖!
-
-<!-- FIXME: Get android users and release into production -->
-<!-- [https://play.google.com/store/apps/details?id=com.tallestlegacy.din_dt] -->
+<div align="center">
+ <img width="128" height="128" alt="play_store_512" src="https://github.com/user-attachments/assets/533cec21-b967-41b6-a78d-98312cd50008" />
+ <h1>Din</h1>
+ <a href="https://play.google.com/store/apps/details?id=com.tallestlegacy.din">
+   <img alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" width="200" />
+ </a>
+ <p>This is a simple material UI Quran and Sunnah reader.</p>
+ <p>🤟 Works on Android, iOS, Linux, Windows and Mac. Thank you Flutter 💖!</p>
+</div>
+<br><br><br>
 
 ## Running the project
 
@@ -50,8 +52,8 @@ flutter run
 
 ## UI
 
-| light                                                                                                       | dark                                                                                                        |
-| ----------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
+| light | dark |
+| ----- | ---- |
 | ![image](https://github.com/tallestlegacy/din_flutter/assets/71118951/32186746-7022-470d-adcc-032b9c28a475) | ![image](https://github.com/tallestlegacy/din_flutter/assets/71118951/d2f95ee9-65ce-4578-adc3-5817a18693b2) |
 
 ## Building
