@@ -1,6 +1,7 @@
 {
-    "cSpell.words": [
-        "Color"
-    ],
-    "C_Cpp.intelliSenseEngineFallback": "disabled"
+  "cSpell.words": [
+    "Color"
+  ],
+  "C_Cpp.intelliSenseEngineFallback": "disabled",
+  "dart.flutterSdkPath": ".fvm/versions/master"
 }
