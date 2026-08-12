@@ -1,7 +1,6 @@
 import 'package:din/screens/more/info/attributions.dart';
 import 'package:din/widgets/back_button.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -16,7 +15,7 @@ import '/widgets/icons.dart';
 import '../../../widgets/theme_toggle_action.dart';
 
 class Info extends StatefulWidget {
-  const Info({Key? key}) : super(key: key);
+  const Info({super.key});
 
   @override
   State<Info> createState() => _InfoState();
@@ -110,7 +109,7 @@ class _InfoState extends State<Info> {
                         onTap: () => push(const AboutApp()),
                       ),
                       ListTile(
-                        leading: const Icon(FontAwesomeIcons.userNinja),
+                        leading: const FaIcon(FontAwesomeIcons.userNinja),
                         title: const Text("Meet the developer"),
                         onTap: () => push(const AboutDeveloper()),
                       ),
@@ -120,10 +119,10 @@ class _InfoState extends State<Info> {
                         onTap: () => push(const Attributions()),
                       ),
                       ListTile(
-                        leading: const Icon(FontAwesomeIcons.githubAlt),
+                        leading: const FaIcon(FontAwesomeIcons.githubAlt),
                         title: const Text("Source Code"),
-                        onTap: () =>
-                            openLink("https://github.com/themosthigh/din_flutter"),
+                        onTap: () => openLink(
+                            "https://github.com/themosthigh/din_flutter"),
                         trailing: linkIcon,
                       ),
                       const Divider(),

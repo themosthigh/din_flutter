@@ -21,7 +21,7 @@ class _PrayerTimesScreenState extends State<PrayerTimesScreen> {
   final GlobalStoreController globalStoreController =
       Get.put(GlobalStoreController());
 
-  initPrayerData() async {
+  Future<void> initPrayerData() async {
     if (mounted) {
       setState(() {
         loading = true;
@@ -44,11 +44,11 @@ class _PrayerTimesScreenState extends State<PrayerTimesScreen> {
 
     List adhan = [
       {"title": "Fajr", "time": prayerTimes.fajr},
-      {"title": "Fajr After", "time": prayerTimes.fajrafter},
+      {"title": "Fajr After", "time": prayerTimes.fajrAfter},
       {"title": "Dhuhr", "time": prayerTimes.dhuhr},
       {"title": "Asr", "time": prayerTimes.asr},
       {"title": "Maghrib", "time": prayerTimes.maghrib},
-      {"title": "Isha Before", "time": prayerTimes.ishabefore},
+      {"title": "Isha Before", "time": prayerTimes.ishaBefore},
       {"title": "Isha", "time": prayerTimes.isha},
     ];
 

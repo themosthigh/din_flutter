@@ -26,7 +26,7 @@ class LearningResources extends StatelessWidget {
         ),
         const Divider(),
         ListTile(
-          leading: const Icon(FontAwesomeIcons.youtube),
+          leading: const FaIcon(FontAwesomeIcons.youtube),
           title: const Text("Youtube"),
           onTap: () {},
           enabled: false,

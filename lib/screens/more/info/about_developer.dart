@@ -28,7 +28,7 @@ class AboutDeveloper extends StatelessWidget {
               ),
             ),
             ListTile(
-              leading: const Icon(FontAwesomeIcons.github),
+              leading: const FaIcon(FontAwesomeIcons.github),
               title: const Text("Github"),
               subtitle: const Text("github.com/themosthigh"),
               onTap: () {
@@ -38,7 +38,7 @@ class AboutDeveloper extends StatelessWidget {
             ),
             const Divider(),
             ListTile(
-              leading: const Icon(FontAwesomeIcons.linkedin),
+              leading: const FaIcon(FontAwesomeIcons.linkedin),
               title: const Text("LinkedIn"),
               subtitle: const Text("linkedin.com/in/marvin-mokua"),
               onTap: () {
