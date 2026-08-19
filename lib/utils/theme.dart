@@ -34,77 +34,79 @@ class Styles {
     );
 
     return ThemeData(
-      useMaterial3: true,
-      colorSchemeSeed: swatch,
-      brightness: isDarkMode ? Brightness.dark : Brightness.light,
-      splashColor: colorScheme.primary.withAlpha(20),
-      primaryTextTheme: TextTheme(
-        bodySmall: TextStyle(color: isDarkMode ? Colors.white : Colors.black87),
-        bodyMedium: TextStyle(
-          color:
-              isDarkMode ? colorScheme.primaryContainer : colorScheme.secondary,
+        useMaterial3: true,
+        colorSchemeSeed: swatch,
+        brightness: isDarkMode ? Brightness.dark : Brightness.light,
+        splashColor: colorScheme.primary.withAlpha(20),
+        primaryTextTheme: TextTheme(
+          bodySmall:
+              TextStyle(color: isDarkMode ? Colors.white : Colors.black87),
+          bodyMedium: TextStyle(
+            color: isDarkMode
+                ? colorScheme.primaryContainer
+                : colorScheme.secondary,
+          ),
         ),
-      ),
-      navigationBarTheme: NavigationBarThemeData(
-        labelBehavior: NavigationDestinationLabelBehavior.onlyShowSelected,
-        backgroundColor: backgroundColor,
-        indicatorColor: onBackgroundShade,
-      ),
-      cardTheme: CardThemeData(
-        color: isDarkMode
-            ? colorScheme.primaryContainer.withAlpha(20)
-            : colorScheme.onPrimaryContainer.withAlpha(20),
-        elevation: .5,
-        shadowColor: Colors.transparent,
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(8),
+        navigationBarTheme: NavigationBarThemeData(
+          labelBehavior: NavigationDestinationLabelBehavior.onlyShowSelected,
+          backgroundColor: backgroundColor,
+          indicatorColor: onBackgroundShade,
         ),
-      ),
-      dividerTheme: DividerThemeData(
-        color: Colors.grey.withAlpha(20),
-      ),
-      listTileTheme: ListTileThemeData(
-        dense: true,
-        minLeadingWidth: 4,
-        minVerticalPadding: 16,
-        iconColor: colorScheme.secondary,
-      ),
-      snackBarTheme: SnackBarThemeData(
-        backgroundColor: colorScheme.primary,
-        contentTextStyle: TextStyle(
-          color: colorScheme.onPrimary,
+        cardTheme: CardThemeData(
+          color: isDarkMode
+              ? colorScheme.primaryContainer.withAlpha(20)
+              : colorScheme.onPrimaryContainer.withAlpha(20),
+          elevation: .5,
+          shadowColor: Colors.transparent,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(8),
+          ),
         ),
-        actionTextColor: colorScheme.onPrimary,
-      ),
-      iconTheme: IconThemeData(
-        color: colorScheme.secondary,
-      ),
-      radioTheme: RadioThemeData(
-        fillColor: WidgetStatePropertyAll(colorScheme.secondary),
-      ),
-      outlinedButtonTheme: OutlinedButtonThemeData(
-          style: ButtonStyle(
-              side: WidgetStatePropertyAll(
-        BorderSide(color: primarySwatch),
-      ))),
-      appBarTheme: AppBarTheme(
-        scrolledUnderElevation: 1,
-        shadowColor: isDarkMode
-            ? primarySwatch.shade100.withAlpha(100)
-            : primarySwatch.shade100,
-        backgroundColor: backgroundColor,
-      ),
-      scaffoldBackgroundColor: backgroundColor,
-      switchTheme: SwitchThemeData(
-        thumbIcon: WidgetStateProperty.resolveWith<Icon?>(
-          (Set<WidgetState> states) {
-            if (states.contains(WidgetState.selected)) {
-              return const Icon(Icons.check);
-            }
-            return null;
-          },
+        dividerTheme: DividerThemeData(
+          color: Colors.grey.withAlpha(20),
         ),
-      ),
-    );
+        listTileTheme: ListTileThemeData(
+          dense: true,
+          minLeadingWidth: 4,
+          minVerticalPadding: 16,
+          iconColor: colorScheme.secondary,
+        ),
+        snackBarTheme: SnackBarThemeData(
+          backgroundColor: colorScheme.primary,
+          contentTextStyle: TextStyle(
+            color: colorScheme.onPrimary,
+          ),
+          actionTextColor: colorScheme.onPrimary,
+        ),
+        iconTheme: IconThemeData(
+          color: colorScheme.secondary,
+        ),
+        radioTheme: RadioThemeData(
+          fillColor: WidgetStatePropertyAll(colorScheme.secondary),
+        ),
+        outlinedButtonTheme: OutlinedButtonThemeData(
+            style: ButtonStyle(
+                side: WidgetStatePropertyAll(
+          BorderSide(color: primarySwatch),
+        ))),
+        appBarTheme: AppBarTheme(
+          scrolledUnderElevation: 1,
+          shadowColor: isDarkMode
+              ? primarySwatch.shade100.withAlpha(100)
+              : primarySwatch.shade100,
+          backgroundColor: backgroundColor,
+        ),
+        // scaffoldBackgroundColor: backgroundColor,
+        switchTheme: SwitchThemeData(
+          thumbIcon: WidgetStateProperty.resolveWith<Icon?>(
+            (Set<WidgetState> states) {
+              if (states.contains(WidgetState.selected)) {
+                return const Icon(Icons.check);
+              }
+              return null;
+            },
+          ),
+        ),
+        sliderTheme: SliderThemeData(year2023: false));
   }
 }
