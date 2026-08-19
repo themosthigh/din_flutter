@@ -25,8 +25,8 @@ android {
 
     defaultConfig {
         applicationId = "com.tallestlegacy.din"
-        minSdk = flutter.minSdkVersion
-        targetSdk = flutter.targetSdkVersion
+        minSdk =  36 // flutter.minSdkVersion
+        targetSdk = 37 // flutter.targetSdkVersion
         versionCode = flutter.versionCode
         versionName = flutter.versionName
     }
